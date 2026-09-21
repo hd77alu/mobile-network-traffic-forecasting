@@ -1,0 +1,14 @@
+numpy
+pandas
+polars
+pyarrow
+matplotlib
+seaborn
+psutil
+requests
+geopandas
+scipy
+statsmodels
+scikit-learn
+tensorflow
+google-colab
