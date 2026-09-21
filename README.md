@@ -1,6 +1,6 @@
 # Mobile Network Traffic Forecasting
 
-This project compares sequential models for one-step-ahead mobile network traffic forecasting using the Telecom Italia Milan dataset. The raw event-level records are streamed from [Harvard Dataverse](https://www.google.com/url?q=https%3A%2F%2Fdoi.org%2F10.1038%2Fsdata.2015.55), aggregated by spatial square and 10-minute interval, and stored as Snappy-compressed Parquet files to reduce memory usage.
+This project compares sequential models for one-step-ahead mobile network traffic forecasting using the Telecom Italia Milan dataset. The raw event-level records are streamed from [Harvard Dataverse]([https://www.google.com/url?q=https%3A%2F%2Fdoi.org%2F10.1038%2Fsdata.2015.55](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EGZHFV)), aggregated by spatial square and 10-minute interval, and stored as Snappy-compressed Parquet files to reduce memory usage.
 
 The notebook analyzes traffic patterns across Milan's $100 \times 100$ spatial grid and evaluates four forecasting approaches on the highest-traffic areas:
 
