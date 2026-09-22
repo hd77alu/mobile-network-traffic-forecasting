@@ -82,6 +82,37 @@ The chronological split is:
 - Validation: December 9–15, 2013
 - Test: December 16–22, 2013
 
+## **Test Set Evaluation Summary**
+### **Square 5161 (Highest Traffic Hotspot)**
+
+| Model Name | MAE | MAPE (%) | RMSE | $R^2$ Score | Fit Time | Infer Time | RAM Usage |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Fourier SARIMAX** | 86.29 | 10.52% | 147.73 | 0.9882 | **1.68s** | **0.050s** | 1534.60 MB |
+| **Random Forest** | 95.91 | **9.27%** | 142.04 | 0.9891 | 2.49s | 0.048s | **1509.76 MB** |
+| **Optimized LSTM** | 0.01 | 15.41% | 0.02 | 0.9910 | 20.75s | 0.294s | 11721.0 MB |
+| **Optimized GRU** | **0.01** | 15.88%| **0.02** | **0.9920** | 23.25s | 0.296s | 1711.15 MB |
+
+---
+### **Square 5059 (Second Highest Traffic)**
+
+| Model Name | MAE | MAPE (%) | RMSE | $R^2$ Score | Fit Time | Infer Time | RAM Usage |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Fourier SARIMAX** | 71.77 | **8.01%** | 114.81 | 0.9850 | **2.25s** | **0.016s** | 1547.18 MB |
+| **Random Forest** | 81.31 | 8.09% | 113.69 | 0.9853 | 3.39s | 0.058s | **1529.29 MB** |
+| **Optimized LSTM** | 0.02 | 15.99% | 0.02 | 0.9883 | 19.66s | 0.270s | 1744.76 MB |
+| **Optimized GRU** | **0.02** | 14.98% | **0.02** | **0.9895** | 20.52s | 0.414s | 1732.43 MB |
+
+---
+### **Square 5259 (Third Highest Traffic)**
+
+| Model Name | MAE | MAPE (%) | RMSE | $R^2$ Score | Fit Time | Infer Time | RAM Usage |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Fourier SARIMAX** | 75.23 | 10.19% | 104.40 | 0.9913 | **1.15s** | **0.015s** | 1548.55 MB |
+| **Random Forest** | 69.27 | **8.14%** | 99.84 | 0.9921 | 3.66s | 0.046s | **1547.82 MB** |
+| **Optimized LSTM** | 0.02 | 10.93% | 0.02| 0.9921 | 18.26s | 0.266s | 1752.33 MB |
+| **Optimized GRU** | **0.02** | 10.77% | **0.02** | **0.9923**| 18.79s | 0.281s | 1739.38 MB |
+
+---
 ## References
 
 - Barlacchi et al. (2015), [A multi-source dataset of urban life in the city of Milan and the Province of Trentino](https://doi.org/10.1038/sdata.2015.55).
