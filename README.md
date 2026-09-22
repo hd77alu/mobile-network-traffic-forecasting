@@ -23,8 +23,6 @@ Models are compared using MAE, MAPE, RMSE, $R^2$, training time, inference time,
 - Sufficient storage for the downloaded raw files and generated Parquet files.
 - Optional GPU acceleration for the LSTM and GRU experiments.
 
-The notebook uses Google Colab-specific imports such as `google.colab.drive` and `google.colab.userdata`. It is therefore designed to run in Google Colab without local-environment changes.
-
 ## Setup
 
 ### 1. Open the notebook
@@ -36,12 +34,12 @@ Upload or open [`timeseries_network_traffic_forcasting.ipynb`](timeseries_networ
 Run this in a Colab cell if the runtime does not already contain the required packages:
 
 ```python
-%pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 3. Configure the Dataverse API token
 
-The notebook reads the API token from Colab Secrets using the key `MY_TOKEN`:
+You can provide your token directly or let the notebook read the API token from Colab Secrets using the key `MY_TOKEN`:
 
 1. Open the **Secrets** panel in Google Colab.
 2. Add a secret named `MY_TOKEN`.
